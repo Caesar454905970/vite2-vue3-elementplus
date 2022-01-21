@@ -1,10 +1,27 @@
-# Vue 3 + Vite
+# Vue 3 + Vite +element plus
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+```
+v16.13.1
+```
 
 ## Recommended IDE Setup
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+## 项目结构:
+
+```
+
+2022-01-20  18:27                68 App.vue
+2022-01-20  14:24    <DIR>          assets  静态文件目录
+2022-01-21  15:27    <DIR>          components 组件目录
+2022-01-21  15:23    <DIR>          Layout 后台框架
+2022-01-21  11:32               386 main.js
+2022-01-21  13:19    <DIR>          router 路由设置
+2022-01-20  16:55    <DIR>          store vuex
+2022-01-21  14:04    <DIR>          utils 工具
+2022-01-21  10:10    <DIR>          views  菜单跳转路由
+```
+
+
 
 
 ## 搭建第一个 Vite 项目
@@ -69,5 +86,4 @@ import { Edit } from '@element-plus/icons-vue'
     <edit></edit>
   </el-icon>
 ```
-
 
