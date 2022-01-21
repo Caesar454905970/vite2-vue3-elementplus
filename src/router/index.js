@@ -20,6 +20,11 @@ const routes = [
                 name: 'Home',
                 component: () => import('../views/Home/index.vue'),
             },
+            {
+                path: 'SysUser',
+                name: 'SysUser',
+                component: () => import('../views/Home/SysUser/index.vue'),
+            },
         ]
     },
 ]

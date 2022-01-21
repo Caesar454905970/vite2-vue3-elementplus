@@ -15,12 +15,12 @@
             <span>菜单一</span>
           </template>
           <el-menu-item index="/home">
-            <el-icon><icon-menu /></el-icon>
+            <el-icon><component :is="name"></component></el-icon>
             <span>主页</span>
           </el-menu-item>
-          <el-menu-item index="/about">
+          <el-menu-item index="/SysUser">
             <el-icon><icon-menu /></el-icon>
-            <span>关于</span>
+            <span>用户管理</span>
           </el-menu-item>
         </el-sub-menu>
 
@@ -43,8 +43,19 @@ import {
   Document,
   Menu as IconMenu,
   Setting,
-  ArrowDown,
+  ArrowDown, Apple,
 } from '@element-plus/icons-vue'
+import {reactive, ref,shallowRef} from "vue";
+
+//定义左侧动态菜单的数据：
+const  items = reactive([
+  { title: '首页',url:'/home'},
+  { title: '用户管理',url:'/'},
+  { title: '角色管理',url:'/'},
+])
+
+//定义图标
+const name =shallowRef(Apple) //定义变量的值
 
 </script>
 
