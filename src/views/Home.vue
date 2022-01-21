@@ -1,22 +1,29 @@
 <template>
-  <el-card >
-    <div>
-      <div style="padding: 10px 0">
-        <el-button type="primary" plain @click="load">搜索</el-button>
+  <div>
+    <el-card >
+      <div>
+        <div style="padding: 10px 0">
+          <el-button type="primary" plain @click="load">搜索</el-button>
+        </div>
+        <el-table :data="tableData" style="width: 100%" v-loading="loading">
+          <el-table-column prop="date" label="Date" width="180" />
+          <el-table-column prop="name" label="Name" width="180" />
+          <el-table-column prop="address" label="Address" />
+        </el-table>
       </div>
-      <el-table :data="tableData" style="width: 100%" v-loading="loading">
-        <el-table-column prop="date" label="Date" width="180" />
-        <el-table-column prop="name" label="Name" width="180" />
-        <el-table-column prop="address" label="Address" />
-      </el-table>
+    </el-card >
+    <div>
+      {{this.$store.state.num}}
     </div>
-  </el-card >
+  </div>
+
 
 </template>
 
 <script setup>
   import {ref} from "vue";
-
+  import {useStore} from "vuex"
+  const store =useStore
   const tableData =ref([])
   const loading =ref(false) //默认不加载
   const load = ()=>{

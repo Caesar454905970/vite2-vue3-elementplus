@@ -47,7 +47,12 @@
                     <el-icon><icon-menu /></el-icon>
                     <span>主页</span>
                   </el-menu-item>
+                  <el-menu-item index="/about">
+                    <el-icon><icon-menu /></el-icon>
+                    <span>关于</span>
+                  </el-menu-item>
                 </el-sub-menu>
+
                 <el-menu-item index="2">
                   <el-icon><icon-menu /></el-icon>
                   <span>菜单二</span>
