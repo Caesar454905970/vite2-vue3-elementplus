@@ -52,6 +52,10 @@ const  items = reactive([
   { title: '首页',url:'/home'},
   { title: '用户管理',url:'/'},
   { title: '角色管理',url:'/'},
+  { title: '权限管理',url:'/'},
+  { title: '设备管理',url:'/'},
+
+
 ])
 
 //定义图标

@@ -5,7 +5,7 @@ const routes = [
     {
         path: '/login',
         name:'login',
-        component: () => import('../views/Login/index.vue'),
+        component: () => import('../views/Login/login.vue'),
         children:[
 
         ]
@@ -30,9 +30,9 @@ const routes = [
 ]
 
 /*const routes = [
-    { path: '/', component: () => import('../Layout/index.vue'),
+    { path: '/', component: () => import('../Layout/login.vue'),
         children:[
-            { path: 'home', component: () => import('../views/Home/index.vue')},
+            { path: 'home', component: () => import('../views/Home/login.vue')},
             { path: 'about', component: () => import('../views/About.vue')},
         ]}
 ]*/
