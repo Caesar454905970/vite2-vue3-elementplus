@@ -173,13 +173,7 @@ onMounted(() => {
 
     // }
   }
-
-
 })
-
-
-
-
 
 // const router = router
   /**
@@ -248,7 +242,6 @@ onMounted(() => {
        return
      }
 
-
       //预验证通过
       // console.log("表单预校验验证成功")
 
@@ -278,7 +271,6 @@ const  createValidCode= (data)=>{
 
 
 </script>
-
 <style lang='less' scoped>
 .login{
   width: 100vw;
@@ -288,9 +280,130 @@ const  createValidCode= (data)=>{
 
 }
 .login-left-logo{
-
+  //690 408
+  background-size: 100% 100% ;
   background-image: url('../../assets/images/login-left-logo.png');
+  //background-size: 100% no-repeat;//---把背景图片放大到适合元素容器的尺寸，图片比例不变，但是要注意，超出容器的部分可能会裁掉
+}
+.reem-logo{
+
+  margin-top: 2.7vh;
+  margin-left: 2.6vh;
+  //
+  //width: 5vw;
+  //height: 2vh;
+  width: 103px;
+  height: 29px;
+  //background-size: 100% 100%;//
   background-size: cover;
+  background-image: url('../../assets/images/reem-logo.png');
+}
+
+.title-font{
+  height:4vh;
+  font-size: 1.5vw;
+}
+@media screen and (min-width: 801px) and (max-width: 941px) {
+  .login-left-logo {
+    height: 164.46px;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 942px) and (max-width: 1028px) {
+  .login-left-logo {
+    height: 193.2px;
+    margin-top: 31px;
+  }
+}
+@media screen and (min-width: 1029px) and (max-width: 1109px) {
+  .login-left-logo {
+    height: 211.1px;
+    margin-top: 31px;
+  }
+}
+@media screen and (min-width: 1110px) and (max-width: 1189px) {
+  .login-left-logo {
+    height: 227.7px;
+    margin-top: 31px;
+  }
+}
+@media screen and (min-width: 1190px) and (max-width: 1289px) {
+  .login-left-logo {
+    height: 244.3px;
+    margin-top: 31px;
+  }
+}
+@media screen and (min-width: 1290px) and (max-width: 1310px) {
+  .login-left-logo {
+    height: 264.6px;
+    margin-top: 31px;
+  }
+}
+@media screen and (min-width: 1311px) and (max-width: 1391px) {
+  .login-left-logo {
+    height: 284.3px;
+    margin-top: 31px;
+  }
+}
+@media screen and (min-width: 1392px) and (max-width: 1472px) {
+  .login-left-logo {
+    height: 304.3px;
+    margin-top: 31px;
+  }
+}
+@media screen and (min-width: 1473px) and (max-width: 1553px) {
+  .login-left-logo {
+    height: 324.3px;
+    margin-top: 31px;
+  }
+}
+@media screen and (min-width: 1554px) and (max-width: 1634px) {
+  .login-left-logo {
+    height: 344.3px;
+    margin-top: 31px;
+  }
+}
+@media screen and (min-width: 1635px) and (max-width: 1715px) {
+  .login-left-logo {
+    height: 364.3px;
+    margin-top: 31px;
+  }
+}
+@media screen and (min-width: 1716px) and (max-width: 1796px) {
+  .login-left-logo {
+    height: 384.3px;
+    margin-top: 31px;
+  }
+}
+@media screen and (min-width: 1797px) and (max-width: 1877px) {
+  .login-left-logo {
+    height: 404.3px;
+    margin-top: 31px;
+  }
+}
+@media screen and (min-width: 1878px) and (max-width: 1920px) {
+  .login-left-logo {
+    height: 424.3px;
+    margin-top: 31px;
+  }
+}
+
+
+
+</style>
+<!--<style lang='less' scoped>
+.login{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../assets/images/login-background.png");
+  background-size: cover;//-&#45;&#45;把背景图片放大到适合元素容器的尺寸，图片比例不变，但是要注意，超出容器的部分可能会裁掉
+
+}
+.login-left-logo{
+  //690 408
+  background-size:100% 100%;
+  background-image: url('../../assets/images/login-left-logo.png');
+  //background-size: 100% no-repeat;//-&#45;&#45;把背景图片放大到适合元素容器的尺寸，图片比例不变，但是要注意，超出容器的部分可能会裁掉
 }
 .reem-logo{
 
@@ -316,4 +429,4 @@ const  createValidCode= (data)=>{
 
 
 
-</style>
+</style>-->
